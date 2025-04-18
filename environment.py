@@ -40,6 +40,7 @@ class SingleFloorLocalizationEnv:
         radius = (max_span / 2.0) + self.radgt
         return [(center_x, center_y), radius]
 
+
     def _calculate_iow(self, window1, window2):
         if window1 is None or window2 is None: return 0.0
         (cx1, cy1), rad1 = window1
